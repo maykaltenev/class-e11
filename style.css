@@ -366,22 +366,25 @@ body {
 }
 .box {
   background-color: tomato;
-  height: 15rem;
+  height: 16rem;
   margin: 1rem;
   width: 17rem;
   font-size: 1.2rem;
+  display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
+  line-height: 1.5rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  border-radius: 2px;
+  border-radius: 1rem;
   padding: 10px;
+  color: rgb(0, 0, 0);
 }
 
 #myBtn {
   width: 130px;
   height: 40px;
-  color: #fff;
+  color: rgb(10, 10, 10);
   border-radius: 5px;
   padding: 10px 25px;
   font-family: "Lato", sans-serif;

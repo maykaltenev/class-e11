@@ -20,7 +20,11 @@ class Person {
         this.wish = wish;
     }
     wishYou() {
-        return `${this.firstName} ${this.lastName} from ${this.countryOfOrigin}, wish you: ${this.wish}`;
+        if (this.lastName === ' ') {
+            return `${this.firstName}, says to you: ${this.wish}`;
+        } else {
+            return `${this.firstName} ${this.lastName} from ${this.countryOfOrigin}, says to you: ${this.wish}`;
+        }
     }
 }
 //1
@@ -59,6 +63,16 @@ let daanVanDerPutte = new Person('Daan', 'van der Putte', 'Netherlands', 'Grazie
 let bahaAlden = new Person('Baha', 'Alden Hasim', 'Sudan', `Thank you Carlo Trimarchi! for the valuable knowledge you added to us! Wishing You Good Health, Happiness, And Success In The Coming Years And Always!.`)
 //18
 let fatihYazicioglu = new Person('Fatih', 'Yazicioglu', 'Turkey', 'Thanks for everything Carlo! I really appreciate your help and contribution!');
+//19 
+let lorenzSchmidt = new Person('Lorenz', 'Schmidt', 'Germany', 'Thank you, Carlo!');
+// //20
+let waseem = new Person('Waseem', ' ', ' ', 'Thank you, Carlo!')
+// //21 
+let john = new Person('John', ' ', ' ', 'Thank you, Carlo!');
+//22
+let anwar = new Person('Anwar', ' ', ' ', 'Thank you, Carlo!')
+// //23 
+let naglaa = new Person('Nagla', ' ', ' ', 'Thank you, Carlo!');
 let e11 = new E11();
 e11.add(maykalTenev);
 e11.add(ahmadShah)
@@ -78,6 +92,11 @@ e11.add(daanVanDerPutte);
 e11.add(steveWolf);
 e11.add(bahaAlden);
 e11.add(fatihYazicioglu);
+e11.add(naglaa);
+e11.add(john);
+e11.add(waseem);
+e11.add(anwar);
+e11.add(lorenzSchmidt);
 
 const getRanHex = (size) => {
     let result = [];
@@ -104,20 +123,18 @@ const getRanHex = (size) => {
     }
     return result.join("");
 };
-
-
 let container = document.querySelector(".container");
 let button = document.querySelector('#myBtn');
 function createDivs() {
     for (const item of e11.allClassmates) {
         let bgColor = getRanHex(4);
         let message = document.createElement('div');
+        message.style.backgroundColor = `#${bgColor}`;
         message.classList.add('box');
         message.style.backgroundColor = `#${bgColor}`;
         message.textContent = item.wishYou()
         container.appendChild(message)
     }
 }
-
 button.addEventListener('click', createDivs)
 
