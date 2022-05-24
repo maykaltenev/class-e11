@@ -363,7 +363,11 @@ body {
 }
 .box {
   background-color: tomato;
-  height: 100px;
+  height: 15rem;
   margin: 1rem;
-  width: 100px;
+  width: 13rem;
+  font-size: 1.2rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
