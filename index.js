@@ -4,6 +4,7 @@ class E11 {
         this.allClassmates = [];
     }
     add(person) {
+        // this.allClassmates.push({ ...person});
         this.allClassmates.push(person);
     }
     print() {
@@ -46,7 +47,7 @@ let sangeethaGujulava = new Person('Sangeetha', 'Gujuluva', 'Sekar, India', 'Dea
 //9
 let emilTerekhin = new Person('Emil', 'Terekhin', 'Russia', 'Carlo! Last two month of my life were full with positive energy, light of hope for a better life, for changes that can happen in my life. it happened thanks to you. Thank you for your patience, positive attitude and delicacy.');
 //10
-let erikaYanez = new Person('Erika', 'Yanez', 'Venezuela :flag-ve:', 'Thank you Carlo for your dedication and good effort to make JavaScript easy to understand and visualize. You are an incredible teacher. I am grateful to have had you during this module. I wish you all the best in the future!');
+let erikaYanez = new Person('Erika', 'Yanez', 'Venezuela', 'Thank you Carlo for your dedication and good effort to make JavaScript easy to understand and visualize. You are an incredible teacher. I am grateful to have had you during this module. I wish you all the best in the future!');
 //11
 let luciaPannunzio = new Person("Lucia", "Pannunzio", "Argentina", `Thank you very much for your patience and for making JS a little more user friendly. We will miss you. See you at the React classes`);
 //12
@@ -64,7 +65,7 @@ let bahaAlden = new Person('Baha', 'Alden Hasim', 'Sudan', `Thank you Carlo Trim
 //18
 let fatihYazicioglu = new Person('Fatih', 'Yazicioglu', 'Turkey', 'Thanks for everything Carlo! I really appreciate your help and contribution!');
 //19 
-let lorenzSchmidt = new Person('Lorenz', 'Schmidt', 'Germany', 'Thank you, Carlo!');
+let lorenzSchmidt = new Person('Lorenz', 'Schmid', 'Germany', 'Carlo, thanks for your kind and patient guidance through the troubled waters of JavaScript accompanied by the soundtrack of your music channel. Take care and hope to see you soon!');
 // //20
 let waseem = new Person('Waseem', ' ', ' ', 'Thank you, Carlo!')
 // //21 
@@ -72,7 +73,7 @@ let john = new Person('John', ' ', ' ', 'Thank you, Carlo!');
 //22
 let anwar = new Person('Anwar', ' ', ' ', 'Thank you, Carlo!')
 // //23 
-let naglaa = new Person('Nagla', ' ', ' ', 'Thank you, Carlo!');
+let naglaaHamed = new Person('Naglaa', 'Hamed', 'Egypt', 'Thank you Carlo. You are great teacher. simple explanation, patient,flexibility, well chosen examples and exercises. Very well done. I wish you all the best and Success. May be we see us again');
 let e11 = new E11();
 e11.add(maykalTenev);
 e11.add(ahmadShah)
@@ -92,7 +93,7 @@ e11.add(daanVanDerPutte);
 e11.add(steveWolf);
 e11.add(bahaAlden);
 e11.add(fatihYazicioglu);
-e11.add(naglaa);
+e11.add(naglaaHamed);
 e11.add(john);
 e11.add(waseem);
 e11.add(anwar);
@@ -123,11 +124,21 @@ const getRanHex = (size) => {
     }
     return result.join("");
 };
+e11.allClassmates.sort((a, b) => {
+    if (a.firstName > b.firstName) {
+        return 1;
+    } else if (b.firstName > a.firstName) {
+        return -1;
+    } else {
+        return 0;
+    }
+});
+// console.log(e11.print())
 let container = document.querySelector(".container");
 let button = document.querySelector('#myBtn');
 function createDivs() {
     for (const item of e11.allClassmates) {
-        let bgColor = getRanHex(4);
+        let bgColor = getRanHex('6');
         let message = document.createElement('div');
         message.style.backgroundColor = `#${bgColor}`;
         message.classList.add('box');
