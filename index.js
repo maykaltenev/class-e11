@@ -23,15 +23,22 @@ class Person {
         return `${this.firstName} ${this.lastName} from ${this.countryOfOrigin}, wish you: ${this.wish}`;
     }
 }
-let maykalTenev = new Person('Maykal', 'Tenev', 'Bulgaria', 'Thank you, Carlo Trimarchi! Wish you long and happy life! I hope that you will find One Piece!')
-let ahmadShah = new Person('Ahmad', 'Shah', 'Afghanistan', 'If you were not there Carlo we would not have made it to learn JavaScript. Thank you, Carlo!')
-let nievinAhmad = new Person('Nievin', 'Ahmad', 'Sudan', 'Thank you Carlo for inspiring me to be my best, and for being there to guide me when I needed help..')
-let vincenzoArena = new Person("Vincenzo", "Arena", "Italy", "Thank you, Carlo, for all the knowledge you passed on to us, for your kindness and your friendly smile. Thanks for being one of us for a few months, and I hope to see you in Italy this Summer! :blush:")
+let maykalTenev = new Person('Maykal', 'Tenev', 'Bulgaria', 'Thank you, Carlo Trimarchi! Wish you long and happy life! I hope that you will find One Piece!');
+let ahmadShah = new Person('Ahmad', 'Shah', 'Afghanistan', 'If you were not there Carlo we would not have made it to learn JavaScript. Thank you, Carlo!');
+let nievinAhmad = new Person('Nievin', 'Ahmad', 'Sudan', 'Thank you Carlo for inspiring me to be my best, and for being there to guide me when I needed help..');
+let vincenzoArena = new Person('Vincenzo', 'Arena', 'Italy', 'Thank you, Carlo, for all the knowledge you passed on to us, for your kindness and your friendly smile. Thanks for being one of us for a few months, and I hope to see you in Italy this Summer! :blush:');
+let miguelWicke = new Person('Miguel', 'Wicke', 'Venezuela', 'Thank you so much Carlo for all the patience and responses to any topic!');
+let aigerimBatyrbekova = new Person('Aigerim', 'Batyrbekova', 'Kyrgyzstan', 'I was so afraid not to understand JS, but you gave it in the best way! We got to know you not only as a great teacher, but also as a great person! Thank you so much! I wish you the incredible heights in all your endeavors!');
+let sangeethaGujulava = new Person('Sangeetha', 'Gujuluva', 'Sekar, India', 'Dear Carlo,Thank you for being a truly outstanding teacher. Your passion for teaching and your dedication  is obvious in everything you do. I feel so lucky to have you as my JS Teacher. I hope you know the priceless impact you are making in so many Students life. Keep going!!')
+let emilTerekhin = new Person('Emil', 'Terekhin', 'Russia', 'Carlo! Last two month of my life were full with positive energy, light of hope for a better life, for changes that can happen in my life. it happened thanks to you. Thank you for your patience, positive attitude and delicacy.')
 let e11 = new E11();
 e11.add(maykalTenev);
 e11.add(ahmadShah)
 e11.add(nievinAhmad);
 e11.add(vincenzoArena);
+e11.add(miguelWicke);
+e11.add(aigerimBatyrbekova);
+e11.add(sangeethaGujulava);
 // console.log(e11.allClassmates[0].wishYou())
 
 
