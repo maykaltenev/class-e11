@@ -33,5 +33,15 @@ e11.add(ahmadShah)
 e11.add(nievinAhmad);
 e11.add(vincenzoArena);
 // console.log(e11.allClassmates[0].wishYou())
-// console.log(e11.allClassmates.map(x => x.wishYou()).join(' '))
-e11.print()
+
+let container = document.querySelector(".container");
+for (const item of e11.allClassmates) {
+    console.log(item)
+    let message = document.createElement('div');
+    message.classList.add('box');
+    message.textContent = item.wishYou()
+    container.appendChild(message)
+}
+
+
+
