@@ -71,7 +71,7 @@ let fatihYazicioglu = new Person('Fatih', 'Yazicioglu', 'Turkey', 'Thanks for ev
 //19 
 let lorenzSchmidt = new Person('Lorenz', 'Schmid', 'Germany', 'Carlo, thanks for your kind and patient guidance through the troubled waters of JavaScript accompanied by the soundtrack of your music channel. Take care and hope to see you soon!');
 // //20
-let waseem = new Person('Waseem', ' ', ' ', 'Thank you, Carlo!')
+let waseem = new Person('Waseem', 'Altinawi', 'Syria', 'Thank you Carlo for your amazing job , dedication, and great efforts, i am so grateful to learn JavaScript with a great teacher like you you made it so simple and very clear to us. i wish you all the best and hope we keep in touch.!')
 // //21 
 let johnAdams = new Person('John', 'Adams', 'Ghana', 'Who would have thought... the e11 being blessed with another superGreat Professor. well I did! We will need to meet again Sig Trimarchi')
 //22
