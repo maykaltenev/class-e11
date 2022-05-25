@@ -97,7 +97,7 @@ e11.add(aliceHeneghan);
 e11.add(christophorusChoras)
 e11.add(steveWolf);
 e11.add(daanVanDerPutte);
-e11.add(steveWolf);
+e11.add(emilTerekhin);
 e11.add(bahaAlden);
 e11.add(fatihYazicioglu);
 e11.add(naglaaHamed);
