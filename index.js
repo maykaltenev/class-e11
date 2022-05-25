@@ -69,11 +69,14 @@ let lorenzSchmidt = new Person('Lorenz', 'Schmid', 'Germany', 'Carlo, thanks for
 // //20
 let waseem = new Person('Waseem', ' ', ' ', 'Thank you, Carlo!')
 // //21 
-let john = new Person('John', ' ', ' ', 'Thank you, Carlo!');
+let johnAdams = new Person('John', 'Adams', 'Ghana', 'Who would have thought... the e11 being blessed with another superGreat Professor. well I did! We will need to meet again Sig Trimarchi')
 //22
 let anwar = new Person('Anwar', ' ', ' ', 'Thank you, Carlo!')
 // //23 
-let naglaaHamed = new Person('Naglaa', 'Hamed', 'Egypt', 'Thank you Carlo. You are great teacher. simple explanation, patient,flexibility, well chosen examples and exercises. Very well done. I wish you all the best and Success. May be we see us again');
+let naglaaHamed = new Person('Naglaa', 'Hamed', 'Egypt', 'Thank you Carlo. You are great teacher. simple explanation, patient, flexibility, well chosen examples and exercises. Very well done. I wish you all the best and Success. May be we see us again');
+//24
+let sara = new Person("Sara", "Eid Dalal", "Syria", "Thank you for being a model of a perfect teacher, you did an amazing job in this class Carlo. I wish you the best of luck, success, and happiness ");
+
 let e11 = new E11();
 e11.add(maykalTenev);
 e11.add(ahmadShah)
@@ -94,10 +97,11 @@ e11.add(steveWolf);
 e11.add(bahaAlden);
 e11.add(fatihYazicioglu);
 e11.add(naglaaHamed);
-e11.add(john);
+e11.add(johnAdams);
 e11.add(waseem);
 e11.add(anwar);
 e11.add(lorenzSchmidt);
+e11.add(sara);
 
 const getRanHex = (size) => {
     let result = [];
@@ -142,7 +146,6 @@ function createDivs() {
         let message = document.createElement('div');
         message.style.backgroundColor = `#${bgColor}`;
         message.classList.add('box');
-        message.style.backgroundColor = `#${bgColor}`;
         message.textContent = item.wishYou()
         container.appendChild(message)
     }
