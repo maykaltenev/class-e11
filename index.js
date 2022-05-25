@@ -145,6 +145,8 @@ e11.allClassmates.sort((a, b) => {
 
 let container = document.querySelector(".container");
 let button = document.querySelector('#myBtn');
+
+//all at once
 // function createDivs() {
 //     for (const item of e11.allClassmates) {
 //         let bgColor = getRanHex('6');
@@ -156,6 +158,7 @@ let button = document.querySelector('#myBtn');
 //     }
 // }
 // button.addEventListener('click', createDivs)
+// one by one
 let counter = 0;
 function createDivs() {
     let bgColor = getRanHex('6');
