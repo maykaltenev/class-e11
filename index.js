@@ -4,13 +4,16 @@ class E11 {
         this.allClassmates = [];
     }
     add(person) {
-        // this.allClassmates.push({ ...person});
+        // this.allClassmates.push({ ...person });
         this.allClassmates.push(person);
     }
     print() {
         for (const item of this.allClassmates) {
             console.log(item.wishYou())
         }
+    }
+    remove() {
+        this.allClassmates.pop();
     }
 }
 class Person {
@@ -28,6 +31,7 @@ class Person {
         }
     }
 }
+
 //1
 let maykalTenev = new Person('Maykal', 'Tenev', 'Bulgaria', 'Thank you, Carlo Trimarchi! Wish you long and happy life! I hope that you will find One Piece!');
 //2
@@ -128,6 +132,7 @@ const getRanHex = (size) => {
     }
     return result.join("");
 };
+
 e11.allClassmates.sort((a, b) => {
     if (a.firstName > b.firstName) {
         return 1;
@@ -137,18 +142,28 @@ e11.allClassmates.sort((a, b) => {
         return 0;
     }
 });
-// console.log(e11.print())
+
 let container = document.querySelector(".container");
 let button = document.querySelector('#myBtn');
+// function createDivs() {
+//     for (const item of e11.allClassmates) {
+//         let bgColor = getRanHex('6');
+//         let message = document.createElement('div');
+//         message.style.backgroundColor = `#${bgColor}`;
+//         message.classList.add('box');
+//         message.textContent = item.wishYou()
+//         container.appendChild(message)
+//     }
+// }
+// button.addEventListener('click', createDivs)
+let counter = 0;
 function createDivs() {
-    for (const item of e11.allClassmates) {
-        let bgColor = getRanHex('6');
-        let message = document.createElement('div');
-        message.style.backgroundColor = `#${bgColor}`;
-        message.classList.add('box');
-        message.textContent = item.wishYou()
-        container.appendChild(message)
-    }
+    let bgColor = getRanHex('6');
+    let message = document.createElement('div');
+    message.style.backgroundColor = `#${bgColor}`;
+    message.classList.add('box');
+    message.textContent = e11.allClassmates[counter].wishYou()
+    container.appendChild(message)
+    counter++;
 }
 button.addEventListener('click', createDivs)
-
